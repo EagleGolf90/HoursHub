@@ -1,0 +1,89 @@
+:root {
+  font-family: 'Trebuchet MS', 'Gill Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f3efe6;
+  color-scheme: dark;
+  background:
+    radial-gradient(circle at top left, rgba(255, 191, 105, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(60, 110, 113, 0.22), transparent 26%),
+    linear-gradient(180deg, #09131b 0%, #0f1d28 48%, #12212e 100%);
+  --bg-app: #09131b;
+  --bg-elevated: rgba(15, 29, 40, 0.9);
+  --bg-surface: rgba(18, 33, 46, 0.94);
+  --bg-surface-strong: #182b39;
+  --bg-muted: #1d3444;
+  --bg-subtle: #223b4d;
+  --bg-input: #132431;
+  --bg-accent: #ffbf69;
+  --bg-accent-soft: rgba(255, 191, 105, 0.14);
+  --bg-success-soft: rgba(58, 125, 68, 0.18);
+  --bg-danger-soft: rgba(188, 71, 73, 0.18);
+  --border-subtle: rgba(170, 205, 219, 0.14);
+  --border-strong: rgba(170, 205, 219, 0.28);
+  --text-primary: #f3efe6;
+  --text-secondary: #b6c8d0;
+  --text-muted: #90a8b2;
+  --text-accent: #ffcf8a;
+  --text-link: #86d0d7;
+  --text-dark-accent: #0e1820;
+  --shadow-soft: 0 18px 42px rgba(0, 0, 0, 0.34);
+  --shadow-strong: 0 24px 54px rgba(0, 0, 0, 0.42);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--text-link);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: inherit;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--bg-surface-strong);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+
+button:hover {
+  border-color: var(--text-link);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid rgba(134, 208, 215, 0.6);
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  color-scheme: dark;
+}

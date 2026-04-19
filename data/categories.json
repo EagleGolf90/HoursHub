@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "General"
+  },
+  {
+    "id": 2,
+    "name": "Corporate Office"
+  },
+  {
+    "id": 3,
+    "name": "Retail Branch"
+  },
+  {
+    "id": 4,
+    "name": "Healthcare"
+  },
+  {
+    "id": 5,
+    "name": "Insurance"
+  }
+]

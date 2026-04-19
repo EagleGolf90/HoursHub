@@ -1,0 +1,251 @@
+.business-hours-container {
+  padding: 12px 0 40px;
+}
+
+.business-detail-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.detail-topbar,
+.location-info,
+.status-card,
+.hours-schedule,
+.content-card,
+.loading,
+.error {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.detail-topbar {
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.back-link {
+  color: var(--text-link);
+  font-weight: 700;
+}
+
+.category-pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--bg-accent);
+  color: var(--text-dark-accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.location-info,
+.status-card,
+.hours-schedule,
+.content-card {
+  padding: 28px;
+}
+
+.location-info h2 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.location-info .address {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.status-card.open {
+  border-top: 6px solid #3a7d44;
+}
+
+.status-card.closed {
+  border-top: 6px solid #bc4749;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status-light {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-light.open {
+  background: #3a7d44;
+  box-shadow: 0 0 0 10px rgba(58, 125, 68, 0.14);
+}
+
+.status-light.closed {
+  background: #bc4749;
+  box-shadow: 0 0 0 10px rgba(188, 71, 73, 0.14);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.status-text {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.current-time {
+  margin: 20px 0 8px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: 0.06em;
+  font-family: 'Courier New', monospace;
+}
+
+.next-status {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.hours-schedule h3,
+.content-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.hours-table,
+.holidays-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table td,
+.holidays-table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hours-table tr:last-child td,
+.holidays-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hours-table tr.today td {
+  color: var(--text-link);
+  font-weight: 700;
+}
+
+.day-name {
+  font-weight: 700;
+}
+
+.day-hours,
+.holiday-date,
+.holiday-name {
+  color: var(--text-secondary);
+}
+
+.slots-list {
+  display: grid;
+  gap: 10px;
+}
+
+.slot-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--bg-surface-strong);
+  border: 1px solid var(--border-subtle);
+}
+
+.slot-time {
+  font-weight: 700;
+}
+
+.slot-break {
+  color: var(--text-muted);
+}
+
+.day-slots + .day-slots {
+  margin-top: 18px;
+}
+
+.day-slots h4 {
+  margin-bottom: 10px;
+}
+
+.closed-badge,
+.open-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.closed-badge {
+  background: var(--bg-danger-soft);
+  color: #ffb0b2;
+}
+
+.open-badge {
+  background: var(--bg-success-soft);
+  color: #91dea1;
+}
+
+.loading,
+.error {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  text-align: center;
+}
+
+.error {
+  color: #ff9da0;
+}
+
+@media (max-width: 640px) {
+  .detail-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .location-info,
+  .status-card,
+  .hours-schedule,
+  .content-card {
+    padding: 22px;
+  }
+
+  .status-indicator {
+    align-items: flex-start;
+  }
+
+  .holidays-table td,
+  .hours-table td {
+    display: block;
+    padding: 8px 0;
+  }
+}
+

@@ -1,0 +1,147 @@
+.regular-hours-editor {
+    width: 100%;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.editor-header h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: var(--text-primary);
+}
+
+.hours-table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+}
+
+.hours-table thead {
+    background: linear-gradient(135deg, #182b39 0%, #244555 100%);
+    color: var(--text-primary);
+}
+
+.hours-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.hours-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.hours-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.hours-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.hours-table tbody tr.closed-row {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.day-cell {
+    font-weight: 600;
+    color: var(--text-primary);
+    width: 120px;
+}
+
+.status-cell {
+    width: 140px;
+}
+
+.time-cell {
+    width: 140px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.status-badge.open {
+    background-color: var(--bg-success-soft);
+    color: #91dea1;
+}
+
+.status-badge.closed {
+    background-color: var(--bg-danger-soft);
+    color: #ffb0b2;
+}
+
+.hours-table input[type="time"] {
+    padding: 8px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: monospace;
+    background: var(--bg-input);
+    color: var(--text-primary);
+}
+
+.hours-table input[type="time"]:disabled {
+    background-color: rgba(255, 255, 255, 0.04);
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.editor-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .editor-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .editor-header .btn {
+        width: 100%;
+    }
+
+    .hours-table th,
+    .hours-table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .day-cell,
+    .status-cell,
+    .time-cell {
+        width: auto;
+    }
+
+    .editor-actions {
+        flex-direction: column;
+    }
+
+    .editor-actions .btn {
+        width: 100%;
+    }
+}

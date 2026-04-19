@@ -1,0 +1,141 @@
+.location-detail-container {
+    width: 100%;
+}
+
+.detail-header {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2em;
+    color: var(--text-primary);
+}
+
+.location-category {
+    margin: 10px 0 0 0;
+    color: var(--text-accent);
+    font-size: 0.95em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.location-address {
+    margin: 8px 0 0 0;
+    color: var(--text-secondary);
+    font-size: 1em;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.detail-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-subtle);
+    background: var(--bg-elevated);
+    padding: 0 30px;
+    border-radius: 16px 16px 0 0;
+}
+
+.tab-button {
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tab-button:hover {
+    color: var(--text-link);
+}
+
+.tab-button.active {
+    color: var(--text-accent);
+    border-bottom-color: var(--bg-accent);
+}
+
+.detail-content {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-top: none;
+    padding: 30px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .detail-header {
+        flex-direction: column;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-header {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+
+    .detail-tabs {
+        padding: 0 20px;
+        overflow-x: auto;
+    }
+
+    .detail-content {
+        padding: 20px;
+    }
+
+    .tab-button {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+}

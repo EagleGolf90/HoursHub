@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "name": "Main Office",
+    "categoryId": 2,
+    "address": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10001",
+    "regularHours": [
+      {
+        "day": "Monday",
+        "open_time": "09:00",
+        "close_time": "18:00",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open_time": "09:00",
+        "close_time": "18:00",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open_time": "09:00",
+        "close_time": "18:00",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open_time": "09:00",
+        "close_time": "18:00",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open_time": "09:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open_time": "10:00",
+        "close_time": "16:00",
+        "is_closed": false
+      },
+      {
+        "day": "Sunday",
+        "open_time": null,
+        "close_time": null,
+        "is_closed": true
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 1,
+        "day_of_week": "Monday",
+        "slot_number": 1,
+        "open_time": "09:00",
+        "close_time": "12:00",
+        "break_start": null,
+        "break_end": null
+      },
+      {
+        "id": 2,
+        "day_of_week": "Monday",
+        "slot_number": 2,
+        "open_time": "13:00",
+        "close_time": "18:00",
+        "break_start": "12:00",
+        "break_end": "13:00"
+      }
+    ],
+    "holidays": [
+      {
+        "id": 1,
+        "holiday_date": "2025-01-01",
+        "holiday_name": "New Year Day",
+        "is_closed": true,
+        "notes": ""
+      },
+      {
+        "id": 2,
+        "holiday_date": "2025-12-25",
+        "holiday_name": "Christmas Day",
+        "is_closed": true,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Downtown Branch",
+    "categoryId": 3,
+    "address": "456 Park Avenue",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10022",
+    "regularHours": [
+      {
+        "day": "Monday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open_time": "08:00",
+        "close_time": "19:00",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open_time": null,
+        "close_time": null,
+        "is_closed": true
+      },
+      {
+        "day": "Sunday",
+        "open_time": null,
+        "close_time": null,
+        "is_closed": true
+      }
+    ],
+    "timeSlots": [],
+    "holidays": [
+      {
+        "id": 3,
+        "holiday_date": "2025-12-25",
+        "holiday_name": "Christmas Day",
+        "is_closed": true,
+        "notes": ""
+      },
+      {
+        "id": 4,
+        "holiday_date": "2025-07-04",
+        "holiday_name": "Independence Day",
+        "is_closed": true,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Humana, Inc",
+    "categoryId": 4,
+    "address": "101 S 5th Street",
+    "city": "Louisville",
+    "state": "KY",
+    "zip_code": "40202",
+    "regularHours": [
+      {
+        "day": "Monday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      },
+      {
+        "day": "Sunday",
+        "open_time": "06:00",
+        "close_time": "20:00",
+        "is_closed": false
+      }
+    ],
+    "timeSlots": [],
+    "holidays": []
+  },
+  {
+    "id": 4,
+    "name": "CKL Insurance & Financial Services, Inc",
+    "categoryId": 5,
+    "address": "2821 S Hurstbourne Pkwy",
+    "city": "Louisville",
+    "state": "KY",
+    "zip_code": "40220",
+    "regularHours": [
+      {
+        "day": "Monday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open_time": "08:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open_time": null,
+        "close_time": null,
+        "is_closed": true
+      },
+      {
+        "day": "Sunday",
+        "open_time": null,
+        "close_time": null,
+        "is_closed": true
+      }
+    ],
+    "timeSlots": [],
+    "holidays": []
+  },
+  {
+    "id": 5,
+    "name": "Heritage Insurance Service",
+    "categoryId": 5,
+    "address": "908 Lily Creek Rd Ste 201",
+    "city": "Louisville",
+    "state": "KY",
+    "zip_code": "40243",
+    "regularHours": [
+      {
+        "day": "Monday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Thursday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Friday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Saturday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      },
+      {
+        "day": "Sunday",
+        "open_time": "09:00",
+        "close_time": "17:00",
+        "is_closed": false
+      }
+    ],
+    "timeSlots": [],
+    "holidays": []
+  }
+]
